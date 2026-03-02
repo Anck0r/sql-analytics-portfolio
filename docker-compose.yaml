@@ -26,6 +26,7 @@ services:
   pgadmin:
     container_name: pgadmin_aca
     image: dpage/pgadmin4
+    user: root
     restart: always
     env_file: .env
     environment:
